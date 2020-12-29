@@ -72,7 +72,7 @@ class Kurrency(
     }
 
     override fun toFloat(): Float {
-        return (subunits.toFloat() / outputMultiplier)
+        return (subunits.toDouble() / outputMultiplier).toFloat()
     }
 
     override fun toInt(): Int {
